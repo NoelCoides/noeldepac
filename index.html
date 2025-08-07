@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="sw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TARIMONOEL Mikopo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>TARIMONOEL Mikopo</h1>
+        <nav>
+            <a href="#">Nyumbani</a>
+            <a href="#features">Huduma</a>
+            <a href="#loan-form">Omba Mkopo</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Pata Mkopo kwa Haraka na Riba Nafuu</h2>
+        <p>Mikopo ya biashara, elimu na dharura – malipo rahisi kila mwezi.</p>
+        <button onclick="document.getElementById('loan-form').scrollIntoView();">
+            Omba Sasa
+        </button>
+    </section>
+
+    <section id="features">
+        <h2>Huduma Zetu</h2>
+        <div class="features">
+            <div class="card">
+                <h3>Mikopo Midogo</h3>
+                <p>Kwa matumizi ya dharura kama ada, matibabu na gharama ndogo.</p>
+            </div>
+            <div class="card">
+                <h3>Mikopo ya Biashara</h3>
+                <p>Inakuza biashara ndogo na kati kwa masharti nafuu.</p>
+            </div>
+            <div class="card">
+                <h3>Mikopo ya Elimu</h3>
+                <p>Kwa wanafunzi kulipia ada na mahitaji ya shule/chuo.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="loan-form">
+        <h2>Omba Mkopo</h2>
+        <form id="loanApplication">
+            <label>Jina Kamili:</label>
+            <input type="text" id="name" required>
+
+            <label>Namba ya Simu:</label>
+            <input type="tel" id="phone" required>
+
+            <label>Kiasi cha Mkopo (TZS):</label>
+            <input type="number" id="amount" required>
+
+            <label>Muda wa Kulipa (miezi):</label>
+            <input type="number" id="months" required>
+
+            <label>Riba (%) kwa mwezi:</label>
+            <input type="number" id="interest" value="5" required>
+
+            <button type="submit">Tuma Ombi</button>
+        </form>
+        <p id="result"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 TARIMONOEL Mikopo. Haki zote zimehifadhiwa.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
